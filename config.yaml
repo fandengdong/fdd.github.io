@@ -1,6 +1,6 @@
 baseURL: "https://fandengdong.github.io/"
 languageCode: "zh-CN"
-title: "my work notes"
+title: "My work notes"
 theme: "PaperMod"
 
 enableInlineShortcodes: true
