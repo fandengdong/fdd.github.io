@@ -8,7 +8,7 @@ layout: single
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
     {{< button href="/toolbox/hugo/" text="hugo" icon="🔧" >}}
-    <!-- {{< button href="/llm/" text="LLM" icon="🤖" >}} -->
+    {{< button href="/toolbox/vscode/" text="vscode" icon="🤖" >}}
 </div>
 
 

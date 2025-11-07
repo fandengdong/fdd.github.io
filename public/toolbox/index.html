@@ -127,6 +127,11 @@
         </div>
         <ul id="menu">
             <li>
+                <a href="http://localhost:1313/llm/" title="大语言模型 (LLM)">
+                    <span>大语言模型 (LLM)</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/toolbox/" title="工具箱">
                     <span class="active">工具箱</span>
                 </a>
@@ -150,184 +155,19 @@
     <div class="post-description">
       提升效率的开发者工具集合
     </div>
-    <div class="post-meta"><span>fandengdong</span>
+    <div class="post-meta"><span title='2025-11-06 18:00:00 +0800 CST'>November 6, 2025</span>&nbsp;·&nbsp;<span>fandengdong</span>
 
 </div>
   </header> 
-  <div class="post-content"><!-- 
-<div style="text-align: center; max-width: 800px; margin: 2rem auto; padding: 0 1rem;">
-  <h2>🛠️ 开发者工具箱</h2>
-  <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
-    这里收录了我在日常开发中高频使用的工具、配置与技巧，
-    帮你节省时间，专注创造。
-  </p>
-</div>
-
-<div style="
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-"> -->
-<!-- <a href="/toolbox/hugo/" style="
-  display: block;
-  padding: 1.2rem;
-  background: #f9fafb;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-">
-  <div style="font-size: 2rem; margin-bottom: 0.5rem;">⌨️</div>
-  <div>hugo</div>
-</a>
- -->
-<!-- <a href="/toolbox/vim/" style="
-  display: block;
-  padding: 1.2rem;
-  background: #f9fafb;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-">
-  <div style="font-size: 2rem; margin-bottom: 0.5rem;">⌨️</div>
-  <div>Vim 编辑器</div>
-</a>
-
-<a href="/toolbox/git/" style="
-  display: block;
-  padding: 1.2rem;
-  background: #f9fafb;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-">
-  <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌱</div>
-  <div>Git 版本控制</div>
-</a>
-
-<a href="/toolbox/docker/" style="
-  display: block;
-  padding: 1.2rem;
-  background: #f9fafb;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-">
-  <div style="font-size: 2rem; margin-bottom: 0.5rem;">🐳</div>
-  <div>Docker 容器</div>
-</a>
-
-<a href="/toolbox/python-env/" style="
-  display: block;
-  padding: 1.2rem;
-  background: #f9fafb;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-">
-  <div style="font-size: 2rem; margin-bottom: 0.5rem;">🐍</div>
-  <div>Python 环境</div>
-</a>
-
-<a href="/toolbox/terminal/" style="
-  display: block;
-  padding: 1.2rem;
-  background: #f9fafb;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-">
-  <div style="font-size: 2rem; margin-bottom: 0.5rem;">💻</div>
-  <div>终端快捷键</div>
-</a>
-
-<a href="/toolbox/vscode/" style="
-  display: block;
-  padding: 1.2rem;
-  background: #f9fafb;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-">
-  <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔵</div>
-  <div>VS Code 配置</div>
-</a>
- -->
-<!-- </div> -->
-<div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
+  <div class="post-content"><div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
     <a href="/toolbox/hugo/" class="btn btn-primary" style="display: inline-block; padding: 0.8rem 1.5rem; background: #f0f8ff; border-radius: 12px; text-decoration: none; color: #2c3e50; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s;">
       🔧 hugo
     </a>
 
-    <!-- <a href="/llm/" class="btn btn-primary" style="display: inline-block; padding: 0.8rem 1.5rem; background: #f0f8ff; border-radius: 12px; text-decoration: none; color: #2c3e50; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s;">
-  🤖 LLM
-</a>
- -->
+    <a href="/toolbox/vscode/" class="btn btn-primary" style="display: inline-block; padding: 0.8rem 1.5rem; background: #f0f8ff; border-radius: 12px; text-decoration: none; color: #2c3e50; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s;">
+      🤖 vscode
+    </a>
+
 </div>
 <blockquote>
 <p>💡 每个工具页面包含安装指南、常用命令和个性化配置。</p>

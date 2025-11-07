@@ -3,17 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/toolbox/</loc>
+    <lastmod>2025-11-06T18:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/llm/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/toolbox/hugo/</loc>
+    <lastmod>2025-11-06T18:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-06T18:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/toolbox/hugo/demo_math_and_image/</loc>
+    <lastmod>2025-11-06T18:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/llm/vllm/deployment/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/llm/vllm/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/llm/vllm/optimization/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/toolbox/hugo/</loc>
+    <loc>http://localhost:1313/toolbox/hugo/demo_tutotial_local/</loc>
   </url><url>
-    <loc>http://localhost:1313/toolbox/hugo/demo_tutotial/</loc>
+    <loc>http://localhost:1313/llm/mindspeed/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/llm/</loc>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/rl/</loc>
   </url>
 </urlset>

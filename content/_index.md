@@ -11,8 +11,11 @@ menu: main
     欢迎一起探索技术的边界！
   </p>
 
-  <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
-    {{< button href="/toolbox/" text="工具箱" icon="🔧" >}}
-    {{< button href="/llm/" text="LLM" icon="🤖" >}}
+<div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
+  {{< button href="/RL/" text="RL" icon="🧠" >}}
+  {{< button href="/LLM/" text="LLM" icon="💬" >}}
+  {{< button href="/toolbox/" text="工具箱" icon="🧰" >}}
+</div>
+    
   </div>
 </div>

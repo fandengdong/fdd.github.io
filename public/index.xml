@@ -6,12 +6,74 @@
     <description>Recent content in 欢迎来到我的工作空间 on My work notes</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-CN</language>
+    <lastBuildDate>Thu, 06 Nov 2025 18:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>论文阅读：Attention Is All You Need</title>
+      <link>http://localhost:1313/toolbox/hugo/demo_math_and_image/</link>
+      <pubDate>Thu, 06 Nov 2025 18:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/toolbox/hugo/demo_math_and_image/</guid>
+      <description>&lt;p&gt;本文简要记录对经典论文《Attention Is All You Need》的理解。&lt;/p&gt;
+&lt;h2 id=&#34;数学公式示例&#34;&gt;数学公式示例&lt;/h2&gt;
+&lt;p&gt;Transformer 中的缩放点积注意力公式：&lt;/p&gt;
+&lt;p&gt;$$
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$&lt;/p&gt;
+&lt;p&gt;行内公式：$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$。&lt;/p&gt;
+&lt;h2 id=&#34;表格示例&#34;&gt;表格示例&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Layer&lt;/th&gt;
+          &lt;th&gt;Output Size&lt;/th&gt;
+          &lt;th&gt;Params&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Embedding&lt;/td&gt;
+          &lt;td&gt;512&lt;/td&gt;
+          &lt;td&gt;1M&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Encoder&lt;/td&gt;
+          &lt;td&gt;512&lt;/td&gt;
+          &lt;td&gt;60M&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Decoder&lt;/td&gt;
+          &lt;td&gt;512&lt;/td&gt;
+          &lt;td&gt;60M&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;插入图片&#34;&gt;插入图片&lt;/h2&gt;
+&lt;p&gt;将图片放在同目录下，同目录下面必须有一个index.md文件，然后引用：&lt;/p&gt;
+&lt;!-- ![Transformer 架构图](transformer.png)  --&gt;
+&lt;p&gt;&lt;img alt=&#34;Transformer 架构图&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/toolbox/hugo/demo_math_and_image/transformer.png&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：确保文件名称为index.md,_index.md文件也不行。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Deploying vLLM in Production</title>
+      <link>http://localhost:1313/llm/vllm/deployment/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/llm/vllm/deployment/</guid>
+      <description>A practical guide to deploying vLLM inference server in production environments</description>
+    </item>
+    <item>
+      <title>vLLM Optimization Techniques</title>
+      <link>http://localhost:1313/llm/vllm/optimization/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/llm/vllm/optimization/</guid>
+      <description>Exploring key optimization techniques used in vLLM for efficient LLM inference</description>
+    </item>
+    <item>
       <title>hugo搭建个人网站笔记</title>
-      <link>http://localhost:1313/toolbox/hugo/demo_tutotial/</link>
+      <link>http://localhost:1313/toolbox/hugo/demo_tutotial_local/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/toolbox/hugo/demo_tutotial/</guid>
+      <guid>http://localhost:1313/toolbox/hugo/demo_tutotial_local/</guid>
       <description>&lt;p&gt;Hugo 是一个非常强大的静态网站生成器，非常适合用来搭建个人知识库、技术博客或学术笔记站点。你提到的需求（支持图片、表格、数学公式）在 Hugo 中都可以很好地实现。&lt;/p&gt;
 &lt;p&gt;下面我们用 PaperMod 创建一个最小可用站点，包含图片、表格和数学公式。&lt;/p&gt;
 &lt;h2 id=&#34;1-创建新站点&#34;&gt;1. 创建新站点&lt;/h2&gt;
