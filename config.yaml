@@ -1,0 +1,25 @@
+baseURL: "https://fandengdong.github.io/"
+languageCode: "zh-CN"
+title: "my work notes"
+theme: "PaperMod"
+
+enableInlineShortcodes: true
+enableEmoji: true
+
+# 启用 KaTeX 数学公式支持
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # 允许 HTML（如 <img>）
+  highlight:
+    noClasses: false
+  math:
+    enable: true
+    useKaTeX: true
+
+params:
+  env: production
+  title: "我的工作笔记"
+  description: "记录论文阅读与代码实践"
+  author: "fandengdong"
+  katex: true
