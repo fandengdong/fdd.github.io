@@ -50,6 +50,8 @@
   </url><url>
     <loc>http://localhost:1313/toolbox/hugo/demo_tutotial_local/</loc>
   </url><url>
+    <loc>http://localhost:1313/toolbox/asyncio/</loc>
+  </url><url>
     <loc>http://localhost:1313/llm/sglang/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>

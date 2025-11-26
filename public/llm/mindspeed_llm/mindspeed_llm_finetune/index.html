@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>使用 Mindspeed-LLM进行预训练 | My work notes</title>
+<title>使用 Mindspeed-LLM进行训练 | My work notes</title>
 <meta name="keywords" content="">
 <meta name="description" content="本指南记录采用mindspeed-llm进行训练的步骤，以微调为例。
 准备数据
@@ -78,7 +78,7 @@
 
 </script><meta property="og:url" content="http://localhost:1313/llm/mindspeed_llm/mindspeed_llm_finetune/">
   <meta property="og:site_name" content="My work notes">
-  <meta property="og:title" content="使用 Mindspeed-LLM进行预训练">
+  <meta property="og:title" content="使用 Mindspeed-LLM进行训练">
   <meta property="og:description" content="本指南记录采用mindspeed-llm进行训练的步骤，以微调为例。
 准备数据 准备数据集的jsonl文件，每个样本是一个字典，至少要包含关键字prompt和response，其中prompt为输入，response为输出。
 注意：如果提供的jsonl文件里面没有包含chat template，那么在转换数据的时候要添加prompt-type参数来提供模板。下面提供一个带了chat templated的jsonl文件样例：
@@ -89,7 +89,7 @@
     <meta property="article:published_time" content="2025-11-14T00:00:00+00:00">
     <meta property="article:modified_time" content="2025-11-14T00:00:00+00:00">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用 Mindspeed-LLM进行预训练">
+<meta name="twitter:title" content="使用 Mindspeed-LLM进行训练">
 <meta name="twitter:description" content="本指南记录采用mindspeed-llm进行训练的步骤，以微调为例。
 准备数据
 准备数据集的jsonl文件，每个样本是一个字典，至少要包含关键字prompt和response，其中prompt为输入，response为输出。
@@ -119,7 +119,7 @@
     {
       "@type": "ListItem",
       "position":  3 ,
-      "name": "使用 Mindspeed-LLM进行预训练",
+      "name": "使用 Mindspeed-LLM进行训练",
       "item": "http://localhost:1313/llm/mindspeed_llm/mindspeed_llm_finetune/"
     }
   ]
@@ -129,8 +129,8 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "使用 Mindspeed-LLM进行预训练",
-  "name": "使用 Mindspeed-LLM进行预训练",
+  "headline": "使用 Mindspeed-LLM进行训练",
+  "name": "使用 Mindspeed-LLM进行训练",
   "description": "本指南记录采用mindspeed-llm进行训练的步骤，以微调为例。\n准备数据 准备数据集的jsonl文件，每个样本是一个字典，至少要包含关键字prompt和response，其中prompt为输入，response为输出。\n注意：如果提供的jsonl文件里面没有包含chat template，那么在转换数据的时候要添加prompt-type参数来提供模板。下面提供一个带了chat templated的jsonl文件样例：\n{\u0026#34;prompt\u0026#34;:\u0026#34;\u0026lt;|im_start|\u0026gt;system\\nYou are a helpful assistant. To answer the user\\\u0026#39;s question, you first think about the reasoning process and then provide the user with the answer. The reasoning process and answer are enclosed within \u0026lt;think\u0026gt; \u0026lt;\\/think\u0026gt; and \u0026lt;answer\u0026gt; \u0026lt;\\/answer\u0026gt; tags, respectively, i.e., \u0026lt;think\u0026gt; reasoning process here \u0026lt;\\/think\u0026gt; \u0026lt;answer\u0026gt; answer here \u0026lt;\\/answer\u0026gt;.\u0026lt;|im_end|\u0026gt;\\n\u0026lt;|im_start|\u0026gt;user\\nLet $\\\\triangle ABC$ have circumcenter $O$ and incenter $I$ with $\\\\overline{IA}\\\\perp\\\\overline{OI}$, circumradius $13$, and inradius $6$. Find $AB\\\\cdot AC$.\\nPlease reason step by step, and put your final answer within \\\\boxed{}.\\nPlease reason step by step, and put your final answer within \\\\boxed{}.\u0026lt;|im_end|\u0026gt;\\n\u0026lt;|im_start|\u0026gt;assistant\\n\u0026#34;,\u0026#34;response\u0026#34;:\u0026#34;\u0026lt;think\u0026gt;\\nI have a geometry problem. We have a triangle ABC with circumcenter O and incenter I....\u0026#34;} {\u0026#34;prompt\u0026#34;:\u0026#34;\u0026lt;|im_start|\u0026gt;system\\nYou are a helpful assistant. To answer the user\\\u0026#39;s question, you first think about the reasoning process and then provide the user with the answer. The reasoning process and answer are enclosed within \u0026lt;think\u0026gt; \u0026lt;\\/think\u0026gt; and \u0026lt;answer\u0026gt; \u0026lt;\\/answer\u0026gt; tags, respectively, i.e., \u0026lt;think\u0026gt; reasoning process here \u0026lt;\\/think\u0026gt; \u0026lt;answer\u0026gt; answer here \u0026lt;\\/answer\u0026gt;.\u0026lt;|im_end|\u0026gt;\\n\u0026lt;|im_start|\u0026gt;user\\nLet \\\\(b\\\\ge 2\\\\) be an integer. Call a positive integer \\\\(n\\\\) \\\\(b\\\\text-\\\\textit{eautiful}\\\\) if it has exactly two digits when expressed in base \\\\(b\\\\) and these two digits sum to \\\\(\\\\sqrt n\\\\). For example, \\\\(81\\\\) is \\\\(13\\\\text-\\\\textit{eautiful}\\\\) because \\\\(81 = \\\\underline{6} \\\\ \\\\underline{3}_{13} \\\\) and \\\\(6 + 3 = \\\\sqrt{81}\\\\). Find the least integer \\\\(b\\\\ge 2\\\\) for which there are more than ten \\\\(b\\\\text-\\\\textit{eautiful}\\\\) integers.\\nPlease reason step by step, and put your final answer within \\\\boxed{}.\\nPlease reason step by step, and put your final answer within \\\\boxed{}.\u0026lt;|im_end|\u0026gt;\\n\u0026lt;|im_start|\u0026gt;assistant\\n\u0026#34;,\u0026#34;response\u0026#34;:\u0026#34;\u0026lt;think\u0026gt;\\nThe problem defines a \\\u0026#34;b-beautiful\\\u0026#34; number as a positive integer...\u0026#34;} 准备好jsonl文件后，利用mindspeed-llm自带的脚本preprocess_data.py来预处理数据：\n",
   "keywords": [
     
@@ -217,7 +217,7 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      使用 Mindspeed-LLM进行预训练
+      使用 Mindspeed-LLM进行训练
     </h1>
     <div class="post-meta"><span title='2025-11-14 00:00:00 +0000 UTC'>November 14, 2025</span>&nbsp;·&nbsp;<span>fandengdong</span>
 
